@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>User页面</title>
+<script type="text/javascript" src="/jc/common/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#regesiter").click(function(){
+		$.ajax({
+			url : "/jc/index/regesiter",
+			method : "POST",
+			data : {
+				name:$("input[name=name]").val(),
+				loginName:$("input[name=loginName]").val(),
+				password:$("input[name=password]").val()
+			},
+			success : function(data) {
+				$("#notice").append(JSON.parse(data).result);
+			}
+		});		
+	});
+	
+	$("#userLogin").click(function(){
+		$.ajax({
+			url : "/jc/index/userLogin",
+			method : "POST",
+			data : {
+				loginName:$("input[name=loginName1]").val(),
+				password:$("input[name=password1]").val()
+			},
+			success : function(data) {
+				console.info(data);
+				$("#notice").append(JSON.parse(data).result);
+			}
+		});		
+	});
+	
+	$("#logout").click(function(){
+		$.ajax({
+			url : "/jc/index/logout",
+			method : "POST",
+			success : function(data) {
+				console.info(data);
+				$("#notice").append(JSON.parse(data).result);
+			}
+		});		
+	});
+	
+});
+
+</script>
+</head>
+<body>
+<label>提示信息: </label><div id="notice"></div>
+用户名：<input type="text" name="loginName1" />
+密码：<input type="password" name="password1" />
+<a href="#" id="userLogin">登陆</a><br/><br/>
+姓名：<input type="text" name="name" />
+用户名：<input type="text" name="loginName" />
+密码：<input type="password" name="password" />
+<a href="#" id="regesiter">注册</a><br/><br/>
+<a href="#" id="logout">退出</a><br/><br/>
+</body>
+</html>

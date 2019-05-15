@@ -1,0 +1,130 @@
+.contain_login {
+	height: 100%;
+	background-color: #2d0303;
+}
+
+.top_login {
+	height: 50%;
+}
+
+.centent_login {
+	
+}
+
+.centent_login input {
+	background: #f7f1e5;
+	height: 35px;
+	display: block;
+	margin: auto;
+	width: 78%;
+	border: 1px solid #efe9e9;
+	border-radius: 5px;
+	font-size: 12px;
+	text-indent: 5px;
+	box-shadow: rgba(255, 255, 255) 0px 0px 12px;
+	-moz-box-shadow: rgba(255, 255, 255) 0px 0px 12px;
+	-webkit-box-shadow: rgba(255, 255, 255) 0px 0px 12px;
+}
+
+.centent_login input:FOCUS {
+	border: 1px solid #cdd5ea;
+}
+
+.centent_login button {
+	background: #f7f1e5;
+	width: 78%;
+	height: 34px;
+	display: block;
+	margin: auto;
+	border: 1px solid #ed7902;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #ed7902;
+	box-shadow: #ed7902 0px 0px 12px;
+	-moz-box-shadow: #ed7902 0px 0px 12px;
+	-webkit-box-shadow: #ed7902 0px 0px 12px;
+	 
+	  
+}
+
+.centent_login button.active-state {
+	background: #ed7902;
+	color: white;
+}
+
+.title_login {
+	height: 40%;
+}
+
+.image_login {
+	height: 60%;
+}
+
+.image_div {
+	border: 1px solid silver;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	margin: auto;
+	margin-top: 20px;
+	background-image: url("/jc/index/img/user.jpg");
+	background-size: 100% 100%;
+	box-shadow: rgba(255, 255, 255) 0px 0px 12px;
+	-moz-box-shadow: rgba(255, 255, 255) 0px 0px 12px;
+	-webkit-box-shadow: rgba(255, 255, 255) 0px 0px 12px;
+	 
+	  
+}
+
+.logo_img {
+	background-image: url("/jc/index/img/logo1.png");
+	background-size: 100%;
+	width: 66%;
+	margin: auto;
+	height: 100%;
+}
+.span_error{
+	display: block;
+    color: red;
+    width: 78%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.messagebar-area{
+	width: 100%;
+	-ms-flex-negative: 1;
+    flex-shrink: 1;
+	margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.messagebar-area textarea{
+	background: #fff;
+    border-radius: 17px;
+    padding: 6px 15px;
+    height: 34px;
+    line-height: 20px;
+    font-size: 17px;
+    border: 1px solid #c8c8cd;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    font-family: inherit;
+}
+ 
+.sendbtn{
+	margin-left: 5px;
+    margin-top: 5px;
+}  
+
+.message-received{
+	margin-top: 48px; 
+}
+.msg-rece{
+	margin-left: 28px;
+	margin-top: -30px;
+}
