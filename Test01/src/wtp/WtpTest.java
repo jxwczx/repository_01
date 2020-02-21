@@ -9,7 +9,7 @@ import com.aspose.words.License;
 import com.aspose.words.SaveFormat;
 
 /**
- * 利用aspose工具将word转pdf；仅共学习使用 非商用
+ * 利用aspose工具将word转pdf；仅共学习使用 非商用。
  * 
  * */
 public class WtpTest {
